@@ -18,7 +18,7 @@
     const render = () => {
         let htmlString = "";
 
-        for (const tasks of task) {
+        for (const task of tasks) {
             htmlString += `
                 <li>
                     ${task.content}
@@ -26,7 +26,7 @@
             `;
         }
         
-        document.querySelector("js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = htmlString;
     }
 
 
