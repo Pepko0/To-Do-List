@@ -1,0 +1,22 @@
+.tasks {
+    margin: auto;
+    max-width: 1000px;
+    background: white;
+}
+
+
+.tasks__title {
+    background: white;
+    margin:auto;
+    margin-top: 5px;
+    max-width: 1000px;
+    font-size: 35px;
+    border-bottom: solid #eee 2px;
+}
+
+.tasks__all {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom:20px;
+}
+

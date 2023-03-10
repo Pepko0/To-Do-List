@@ -1,0 +1,56 @@
+.flex {
+    background: white;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;  
+    margin-bottom: 5px;
+    padding:10px;
+}
+
+.flex__input {
+    flex-basis: 74%;
+    margin-bottom: 5px;
+    margin-right: 7px;
+    height: 35px;
+}
+
+.flex__button {
+    flex-basis: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 35px;
+}
+
+.flex__title {
+    margin-top: 0px;
+    padding: 10px;
+    width: 100%;
+    background: white ;
+    font-size: 20px;
+    height: 45px;
+    border-bottom: solid 2px #eee;
+    
+}
+
+.flex__task {
+    flex-basis: 100%;
+    list-style: none;
+    margin: 10px 10px 10px 10px;
+    border: solid 1px red;
+}
+
+@media (max-width: 767px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+    
+    .flex__input {
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+    .flex__button {
+        flex-basis: 100%;
+    }
+}
+

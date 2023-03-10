@@ -10,16 +10,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>To Do List</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/tasks.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<form class="js-form">
-    <input class="js-newTask">
-    <button>Wyślij</button>
-</form>
-    <ul class="js-tasks"></ul>
 
-<body>
+<body class="body">
+    
+    
+    <h1 class="flex__header">Lista zadań</h1>
+    <form class="js-form flex">
+        <p class="flex__title">Dodaj nowe zadanie</p>
+        <input class="js-newTask flex__input">
+        <button class="flex__button">Dodaj zadanie</button>
+    </form>
+
+
+
+    
+    <form class="flex">
+        <p class="flex__title">Lista zadań</p>
+        <ul class="js-tasks flex__task"></ul>
+    </form>
+
+
+    
+
 
 </body>
 
