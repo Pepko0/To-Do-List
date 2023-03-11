@@ -1,8 +1,11 @@
 .mainHeader {
-    margin: auto;
-    margin-top:50px;
-    font-size: 60px;
-    max-width: 1000px;
-    background: white;
-};
+    margin: 10px auto;
+    max-width: 800px;
+}
 
+.subHeader {
+    margin: 5px auto 2px;
+    max-width: 800px;
+    background: white;
+
+}

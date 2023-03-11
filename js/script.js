@@ -57,8 +57,8 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li ${task.done ? " class=\"task__decoration\"" : ""}><button class="js-done">zrobione</button>
-                    ${task.content}<button class="js-remove">usuń</button>
+                <li ${task.done ? " class=\"task__decoration flex__task\"" : "class=\"flex__task\"" }><button class="js-done flex__buttonDone">zrobione</button>
+                    ${task.content}<button class="js-remove flex__buttonRemove">usuń</button>
                 </li>
             `;
         };
