@@ -1,7 +1,7 @@
 .flex {
     background: white;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;  
     margin-bottom: 5px;
@@ -21,13 +21,35 @@
     margin-bottom: 20px;
     height: 35px;
 }
+
+.flex__task {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding:10px;
+    margin: 10px 0px;
+    list-style: none;
+    border: solid 1px red;
+}
+
+.flex__text {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
 .flex__buttonRemove {
     background: teal;
+    flex-basis: 25%;
+    padding: 10px;
 }
 
 .flex__buttonDone {
+    padding: 10px;
     background: teal;
-    width: 25%;
+    flex-basis: 25%;
+    text-decoration-line: none;
 }
 
 .flex__title {
@@ -39,16 +61,6 @@
     height: 45px;
     border-bottom: solid 2px #eee;
     
-}
-
-.flex__task {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: 100%;
-    margin: 10px 0px;
-    list-style: none;
-    border: solid 1px red;
 }
 
 .task__decoration {
