@@ -1,11 +1,5 @@
-.mainHeader {
-    margin: 10px auto;
-    max-width: 800px;
-}
-
-.subHeader {
-    margin: 5px auto 2px;
-    max-width: 800px;
-    background: white;
-
+.form__header {
+    padding: 10px;
+    margin : 0px;
+    border-bottom: solid 2px #eee;
 }

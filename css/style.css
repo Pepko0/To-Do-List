@@ -8,6 +8,10 @@ html {
 
 .body {
     background: #eee;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
 }
+
 
 

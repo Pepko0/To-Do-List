@@ -15,7 +15,6 @@
         },
     ];
 
-
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -58,11 +57,12 @@
         for (const task of tasks) {
             htmlString += `
                 <li 
-                    class="flex__task ${task.done ? " task__decoration " : ""}"
-                    >
-                    <button class="js-done flex__buttonDone">zrobione</button>
-                    <span class="flex__text">${task.content}</span>
-                    <button class="js-remove flex__buttonRemove">usuń</button>
+                    class="task__item">
+                    <button class="form__buttonDone form__buttonDone--click js-done"> 
+                    ${task.done ? "✔" : ""}
+                    </button>
+                    <span class="form__text ${task.done ? " task__decoration " : ""}">${task.content} </span>
+                    <button class="js-remove form__buttonRemove">🗑</button>
                 </li>
             `;
         };
@@ -85,10 +85,12 @@
     const init = () => {
         welcome();
         render();
-
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
+
     };
     init();
+    
+
 };

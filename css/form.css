@@ -1,88 +1,91 @@
-.flex {
-    background: white;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;  
-    margin-bottom: 5px;
-    padding:10px;
+.section {
+    margin: 5px 0;
+    background: rgb(255, 255, 255);
 }
 
-.flex__input {
-    flex-basis: 74%;
-    margin-bottom: 5px;
-    margin-right: 7px;
-    height: 35px;
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
 }
 
-.flex__button {
-    flex-basis: 25%;
-    text-align: center;
-    margin-bottom: 20px;
-    height: 35px;
+.form__body {
+    padding: 15px;
 }
 
-.flex__task {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    padding:10px;
-    margin: 10px 0px;
+.task {
     list-style: none;
-    border: solid 1px red;
+    padding: 0;
+    margin: 0;
 }
 
-.flex__text {
-    display: flex; 
-    flex-wrap: wrap;
-    padding: 10px;
+.form__newTask {
+    border-radius: 0;
+    border: solid 2px #a1a1a1;
 }
 
-.flex__buttonRemove {
-    background: teal;
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.flex__buttonDone {
-    padding: 10px;
-    background: teal;
-    flex-basis: 25%;
-    text-decoration-line: none;
-}
-
-.flex__title {
-    margin-top: 0px;
-    padding: 10px;
-    width: 100%;
-    background: white ;
-    font-size: 20px;
-    height: 45px;
-    border-bottom: solid 2px #eee;
-    
+.task__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 1px #eee;
 }
 
 .task__decoration {
-    text-decoration-line: line-through;
-    color: #6d6d6d;
-    border: solid 1px red;
+    text-decoration: line-through;
+    color: #cecece;
     list-style: none;
 }
 
+.form__button {
+    background: teal;
+    color: white;
+    border: none;
+    font-size: 25px;
+    height: 40px;
+}
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+    cursor: pointer;
+}
+
+.form__buttonDone {
+    background: #8dc477;
+    border-radius: 100%;
+    color: white;
+    border: none;
+    width:35px;
+    height:35px;
+}
+
+.form__buttonDone:hover {
+    border: solid 1px white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__buttonRemove:hover{
+    border: solid 1px white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__buttonRemove {
+    background: rgb(230, 113, 113);
+    border: none;
+    border-radius: 100%;
+    color: white;
+    width:35px;
+    height:35px;
+}
 
 
 @media (max-width: 767px) {
-    .flex {
-        flex-wrap: wrap;
-    }
-    
-    .flex__input {
-        flex-basis: 100%;
-        margin-right: 0px;
-    }
-    .flex__button {
-        flex-basis: 100%;
-    }
-}
+    .form {
+        grid-template-columns: 1fr;
+    };
 
+}
