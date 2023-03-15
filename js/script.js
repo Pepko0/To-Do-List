@@ -73,13 +73,15 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        const newTaskTekst =  document.querySelector(".js-newTask");
+        const newTaskContent = newTaskTekst.value.trim();
+        
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
+        }
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        if (newTaskContent === "") {
-            return;
-        };
-
-        addNewTask(newTaskContent);
+        newTaskTekst.focus();
     };
 
     const init = () => {
