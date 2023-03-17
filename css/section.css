@@ -1,0 +1,14 @@
+.section {
+    margin: 5px 0;
+    background: rgb(255, 255, 255);
+}
+
+.section__header {
+    padding: 10px;
+    margin : 0px;
+    border-bottom: solid 2px #eee;
+}
+
+.section__body {
+    padding: 15px;
+}
