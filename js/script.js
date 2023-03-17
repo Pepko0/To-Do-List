@@ -4,16 +4,7 @@
         console.log("Hello!!");
     };
 
-    const tasks = [
-        {
-            content: "Kupić rower",
-            done: false,
-        },
-        {
-            content: "Kupic mięso",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
