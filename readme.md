@@ -17,7 +17,7 @@ I creted webiste wher You can add new task and change their status
 
 
 ## The appearance of the **_Social Media_** page
-[![socialmedia.png](https://i.postimg.cc/FKPwRgd8/socialmedia.png)](https://postimg.cc/2qZ09Wx7)
+[![social-Media.png](https://i.postimg.cc/ZYGdvG6F/social-Media.png)](https://postimg.cc/LhVXr0Cn)
 
 
 ## I **invite You** to visit my page
