@@ -4,12 +4,15 @@
         console.log("Hello!!");
     };
 
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTasks = false; 
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        })
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
+        
         render();
     };
 
@@ -63,12 +66,15 @@
 
     const renderButtons = () => {};
 
+    const bindButtonsEvents = () => {};
+
     const render = () => {
         renderTask();
         renderButtons();
 
 
         bindEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
