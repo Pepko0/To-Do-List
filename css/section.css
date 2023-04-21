@@ -7,8 +7,19 @@
     padding: 10px;
     margin : 0px;
     border-bottom: solid 2px #eee;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section__body {
     padding: 15px;
+}
+
+.section__title {
+    padding: 10px;
+    margin : 0px;
+
 }

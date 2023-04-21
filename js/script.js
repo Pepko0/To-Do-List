@@ -4,8 +4,10 @@
         console.log("Hello!!");
     };
 
-    let tasks = [];
-    let hideDoneTasks = false; 
+    let tasks = ([
+        { content: "LALA", done: true },
+    ]);
+
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -17,6 +19,8 @@
     };
 
     const removeTask = (taskIndex) => {
+        
+        
         tasks.splice(taskIndex, 1);
         render();
     };
@@ -64,7 +68,29 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => {};
+    const renderButtons = () => {
+        const buttonRender = document.querySelector(".js-buttons");
+
+        if(tasks.length === 0) {
+            buttonRender.innerHTML = "";   
+        } else {
+            buttonRender.innerHTML = `
+            <button class="buttons__header">
+            Ukryj ukończone
+            </button>
+            <button class="buttons__header">
+            Ukończ wszystkie
+            </button>
+            `;
+        };
+           
+
+    
+        
+        console.log(tasks)
+
+    
+    };
 
     const bindButtonsEvents = () => {};
 
