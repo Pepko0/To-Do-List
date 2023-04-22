@@ -83,13 +83,6 @@
             </button>
             `;
         };
-           
-
-    
-        
-        console.log(tasks)
-
-    
     };
 
     const bindButtonsEvents = () => {};
