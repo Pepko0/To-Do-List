@@ -1,4 +1,20 @@
 .buttons__header{
     background-color: transparent;
     border: none;
-    }
+    color: teal;    
+    font-size: 20px;
+    transition: 0.5s;     
+}
+
+
+.buttons__header:hover{
+    cursor: pointer;
+    color: rgb(1, 175, 175);
+
+}
+
+.buttons__header:disabled {
+    color: #c1c1c1;
+    cursor: default;
+    transform: 1s;
+}
