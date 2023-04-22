@@ -13,6 +13,13 @@
 
 }
 
+@media (max-width: 767px) {
+    .buttons__header {
+     margin: 5px;
+    }
+
+}
+
 .buttons__header:disabled {
     color: #c1c1c1;
     cursor: default;
