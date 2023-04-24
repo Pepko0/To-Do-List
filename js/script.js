@@ -1,20 +1,12 @@
 {
+    let tasks = [];
+    
+    let hideDoneTasks = false;
 
     const welcome = () => {
         console.log("Hello!!");
-    };
-
-    tasks = [
-        {
-            content: "Kupić rower",
-            done: false,
-        },
-        {
-            content: "Kupic mięso",
-            done: true,
-        },
-    ];
-
+    };    
+    
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
@@ -87,7 +79,7 @@
         } else {
             buttonRender.innerHTML = `
             <button class="buttons__header js-buttonHiden">
-            Ukryj ukończone
+            ${hideDoneTasks ? "Pokaż" : "Ukryj" } ukończone
             </button>
             <button class="buttons__header js-buttonAllTaskDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
             Ukończ wszystkie
@@ -104,18 +96,17 @@
         render();
     };
 
-    let hideDoneTask = false;
 
-    const toggleHideDoneTask = () => {
-        hideDoneTask = !hideDoneTask;
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
         render();
     };
 
     const bindButtonsEvents = () => {
-        const buttonHideDoneTask = document.querySelector(".js-buttonHiden");
+        const buttonHideDoneTasks = document.querySelector(".js-buttonHiden");
 
-        if (buttonHideDoneTask) {
-            buttonHideDoneTask.addEventListener("click", toggleHideDoneTask);
+        if (buttonHideDoneTasks) {
+            buttonHideDoneTasks.addEventListener("click", toggleHideDoneTasks);
         };
 
         const buttonAllTaskDone = document.querySelector(".js-buttonAllTaskDone");
