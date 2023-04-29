@@ -7,7 +7,7 @@
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
-    };
+    }
 
 }
 
@@ -38,7 +38,6 @@
 
 .form__buttonDone {
     background: #8dc477;
-    border-radius: 100%;
     color: white;
     border: none;
     width:35px;
@@ -46,21 +45,22 @@
 }
 
 .form__buttonDone:hover {
-    border: solid 1px white;
     font-weight: bold;
     cursor: pointer;
+    background: #9edb86;
+    transition: 1s; 
 }
 
 .form__buttonRemove:hover{
-    border: solid 1px white;
     font-weight: bold;
     cursor: pointer;
+    background: #ff7e7e;
+    transition: 1s;
 }
 
 .form__buttonRemove {
     background: rgb(230, 113, 113);
     border: none;
-    border-radius: 100%;
     color: white;
     width:35px;
     height:35px;

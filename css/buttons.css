@@ -1,3 +1,8 @@
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .buttons__header{
     background-color: transparent;
     border: none;
@@ -16,6 +21,10 @@
 @media (max-width: 767px) {
     .buttons__header {
      margin: 5px;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
     }
 
 }
